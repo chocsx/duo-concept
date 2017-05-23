@@ -1,0 +1,20 @@
+
+RewriteOptions inherit
+
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.fsafferortodontia.com.br
+AuthUserFile /home/saffer/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/saffer/public_html/_vti_pvt/service.grp
+

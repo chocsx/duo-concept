@@ -1,0 +1,6 @@
+bower_components/
+node_modules/
+.temp/
+app/phpmailer
+app/envia.php
+dist/envia.php
