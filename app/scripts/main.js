@@ -47,14 +47,18 @@ $(document).ready(function(){
     });
     
     $('.slider').slick({
-      autoplay: false,
+      autoplay: true,
       infinite: true,
       arrows: true,
       nextArrow: '<i class="arrow-right"></i>',
       prevArrow: '<i class="arrow-left"></i>',
-      speed: 300,
+      autoplaySpeed: 3000,
+      speed: 1000,
       slidesToShow: 1,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      fade: true,
+      cssEase: 'linear',
+      pauseOnHover: false,
     });
 
     $('.menu-suspenso a, .scrollTop').click(function(e){
